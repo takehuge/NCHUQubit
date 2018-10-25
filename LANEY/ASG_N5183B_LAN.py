@@ -7,12 +7,6 @@ init(autoreset=True)
 start = time()
 rm = ResourceManager()
 
-# ip2 = "192.168.0.12"
-# # pna = rm.open_resource("TCPIP0::%s::inst0::INSTR" %ip2)
-# pna = rm.open_resource("TCPIP0::%s::8088::inst0::INSTR" %ip2)
-# who = pna.query("*IDN?")
-# print("I am %s" %who)
-
 ip = "169.254.0.1"
 # asg = rm.open_resource("TCPIP0::169.254.157.31::inst0::INSTR")
 # asg = rm.open_resource("TCPIP0::%s::inst0::INSTR" %ip)
@@ -33,6 +27,7 @@ print("IP: %s" %ip)
 feq = asg.query(":FREQ?")
 print("frequency: %sGHz" %(float(feq)/1e9))
 
+# A = input("press any key... ")
 start_freq = float(input(Back.WHITE + Fore.BLACK + "Enter Starting Frequency (GHz): "))
 stop_freq = float(input(Back.WHITE + Fore.BLACK + "Enter Last Frequency (GHz): "))
 N = int(input(Back.WHITE + Fore.BLACK + "How many points: "))
