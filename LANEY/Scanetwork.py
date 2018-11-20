@@ -1,7 +1,7 @@
 import subprocess
 import platform
 platinfo = platform.system()
-print("THIS platform is %s" %platinfo)
+print("this platform is %s" %platinfo)
 
 IPlist, active = [], []
 for i in range(10):
