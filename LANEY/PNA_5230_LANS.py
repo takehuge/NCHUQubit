@@ -9,7 +9,7 @@ init(autoreset=True)
 start = time()
 rm = ResourceManager()
 
-ip = "192.168.0.6"
+ip = "192.168.0.5"
 pna = rm.open_resource("TCPIP0::%s::hpib7,16::INSTR" %ip)
 
 pna.read_termination = '\n' #omit termination tag from output 
