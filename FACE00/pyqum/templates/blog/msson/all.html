@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/mssn/all.js') }}"></script>
+</head>
+
+<body>
+
+<div class="all clock"></div>
+<!--<div class="atest">THIS IS A TEST PAGE</div>-->
+
+<div style="background-color: black;">
+<h3 style="color: white;">Welcome to play any instrument below:</h3>
+</div>
+
+<div class="row">
+    <div class="col-25"><select class='msson' id="test" name="idea" type="text">
+        {% for i in range(3) %}
+        <option value={{i}} {% if i == 1 %} selected {% endif %}>{{i}}</option>
+        {% endfor %}</select>
+    </div> 
+</div>
+<div class="row">
+    <button class='msson' id='test'>TEST BUTTON</button>
+</div>
+
+<button id='how'>How am I?</button>
+<div class="all good"><h3>I am GOOD</h3></div>
+<div class="all good" style="display: none"><h3>I am AWESOME</h3></div>
+
+<p>1. CHAR: Qubit Characterization </p>
+
+</body>
+
+</html>
